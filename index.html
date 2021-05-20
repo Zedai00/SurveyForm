@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Covid-19 Vaccination Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1 id="title">Covid-19 Vaccination Survey Form</h1>
-    <p id="description">Thank you for participating to let us know the rate of vaccination in you
+    <p id="description">Thank you for participating to let us know the rate of vaccination in your
         Country</p>
     <form id="survey-form">
         <label for="name" id="name-label">Name</label>
@@ -22,7 +23,7 @@
         <label for="number" id="number-label">Age</label>
         <input type="number" name="age" id="number" min="1" max="110" placeholder="Age">
 
-        <label for="country" id="dropdown">Country</label>
+        <label for="country" id="dropdown-label">Country</label>
         <select id="dropdown" name="country">
             <option disabled selected value>Select Your Country</option>
             <option value="Afghanistan">Afghanistan</option>
@@ -274,45 +275,44 @@
         </select>
 
         <div id="Vaccines">
-            <p>Which Covid vaccine did you have?</p>
-            <label><input type="radio" name="vaccine" value="Comirnaty(BNT162b2)">Comirnaty(BNT162b2)</label>
-            <label><input type="radio" name="vaccine" value="Moderna Vaccine (mRNA-1273)">Moderna
+            <p id="vaccine-label">Which Covid vaccine did you have?</p>
+            <label><input type="radio" id="vaccine" name="vaccine" value="Comirnaty(BNT162b2)">Comirnaty(BNT162b2)</label>
+            <label><input type="radio" id="vaccine" name="vaccine" value="Moderna Vaccine (mRNA-1273)">Moderna
                 Vaccine(mRNA-1273)</label>
-            <label><input type="radio" name="vaccine" value="AstraZeneca(AZD1222)">AstraZeneca(AZD1222)</label>
-            <label><input type="radio" name="vaccine" value="Sputnik V">Sputnik V</label>
-            <label><input type="radio" name="vaccine" value="Sputnik Light">Sputnik Light</label>
-            <label><input type="radio" name="vaccine" value="Janssen (JNJ-78436735; Ad26.COV2.S)">Janssen (JNJ-78436735;
+            <label><input type="radio" id="vaccine" name="vaccine" value="AstraZeneca(AZD1222)">AstraZeneca(AZD1222)</label>
+            <label><input type="radio" name="vaccine" id="vaccine" id="vaccine" value="Sputnik V">Sputnik V</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="Sputnik Light">Sputnik Light</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="Janssen (JNJ-78436735; Ad26.COV2.S)">Janssen (JNJ-78436735;
                 Ad26.COV2.S)</label>
-            <label><input type="radio" name="vaccine" value="CoronaVac">CoronaVac</label>
-            <label><input type="radio" name="vaccine" value="BBIBP-CorV">BBIBP-CorV</label>
-            <label><input type="radio" name="vaccine" value="EpiVacCorona">EpiVacCorona</label>
-            <label><input type="radio" name="vaccine" value="Convidicea(Ad5-nCoV)">Convidicea(Ad5-nCoV)</label>
-            <label><input type="radio" name="vaccine" value="Covaxin(BBV152)">Covaxin(BBV152)</label>
-            <label><input type="radio" name="vaccine" value="WIBP-CorV">WIBP-CorV</label>
-            <label><input type="radio" name="vaccine" value="CoviVac">CoviVac</label>
-            <label><input type="radio" name="vaccine" value="ZF2001">ZF2001</label>
-            <label><input type="radio" name="vaccine" value="QazVac(QazCovid-in)">QazVac(QazCovid-in)</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="CoronaVac">CoronaVac</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="BBIBP-CorV">BBIBP-CorV</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="EpiVacCorona">EpiVacCorona</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="Convidicea(Ad5-nCoV)">Convidicea(Ad5-nCoV)</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="Covaxin(BBV152)">Covaxin(BBV152)</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="WIBP-CorV">WIBP-CorV</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="CoviVac">CoviVac</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="ZF2001">ZF2001</label>
+            <label><input type="radio" name="vaccine" id="vaccine" value="QazVac(QazCovid-in)">QazVac(QazCovid-in)</label>
         </div>
 
         <div id="doses">
-            <p>How many doses did you have?</p>
+            <p id="doses-label">How many doses did you have?</p>
             <label><input type="radio" name="doses" value="1">1</label>
             <label><input type="radio" name="doses" value="2">2</label>
         </div>
 
         <div id="symptoms">
-            <p>Did you have any of these symptoms?</p>
+            <p id="symptoms-label">Did you have any of these symptoms?</p>
             <label><input type="checkbox" name="symptoms" value="Tiredness">Tiredness</label>
             <label><input type="checkbox" name="symptoms" value="Headache">Headache</label>
             <label><input type="checkbox" name="symptoms" value="Muscle pain">Muscle pain</label>
             <label><input type="checkbox" name="symptoms" value="Chills">Chills</label>
             <label><input type="checkbox" name="symptoms" value="Fever">Fever</label>
             <label><input type="checkbox" name="symptoms" value="Nausea">Nausea</label>
-            <label>Others<input type="text" name="symptoms" placeholder="Write Any Other Symptoms."></label>
-        </div>
+         </div>
 
-        <div id="comments">
-            <p>If you have any suggestion, comments or feedback you can write to us here</p>
+        <div>
+            <p id="comment">If you have any suggestion, comments or feedback you can write to us here</p>
             <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
         </div>
 

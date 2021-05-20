@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  background-color: rgb(74, 74, 218);
+  color: rgb(255, 255, 255);
+  font-family: 'poppins' -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 110%;
+}
+
+h1, #description {
+  text-align: center;
+}
+
+#survey-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: rgba(27, 27, 50, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  padding-right: 8%;
+}
+
+label {
+  display: flex;
+}
+
+#name-label, #email-label, #number-label {
+  margin-bottom: 0.5%;
+  margin-top: 2%;
+  font-size: 118%;
+}
+
+#name, #email, #number {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+#dropdown {
+  width: 104%;
+}
+
+#dropdown-label {
+  width: 104%;
+  margin-bottom: 0.5%;
+  margin-top: 2%;
+  font-size: 118%;
+}
+
+#vaccine-label {
+  margin-bottom: 0.5%;
+  font-size: 118%;
+}
+
+#vaccine {
+  margin-bottom: 1%;
+}
+
+#doses-label {
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  font-size: 118%;
+}
+
+#symptoms-label {
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  font-size: 118%;
+}
+
+#comment {
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  font-size: 118%;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+button {
+  display: block;
+  width: 101.5%;
+  margin-top: 2%;
+  font-size: 118%;
+  background-color: rgb(18, 179, 90);
+  border-radius: 10px;
+  padding: 2%;
+  color: aliceblue;
+  border: none;
+}
+
