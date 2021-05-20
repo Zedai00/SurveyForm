@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
-
 body {
   background-color: rgb(74, 74, 218);
   color: rgb(255, 255, 255);
@@ -18,8 +17,21 @@ h1, #description {
   width: 70%;
   background-color: rgba(27, 27, 50, 0.2);
   border-radius: 10px;
-  padding: 5%;
-  padding-right: 8%;
+  padding: 2% 3% 2% 2%;
+  max-width: 40%;
+}
+
+@media (max-width: 800px) {
+  #survey-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: rgba(27, 27, 50, 0.2);
+    border-radius: 10px;
+    padding: 3% 5% 3% 3%;
+    max-width: 70%;
+  }
 }
 
 label {
@@ -91,4 +103,3 @@ button {
   color: aliceblue;
   border: none;
 }
-
